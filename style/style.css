@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px 10px 30px;
+  background-color: #202020;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.titulo{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  text-align: left;
+  margin: 0;
+  color: rgb(255, 255, 255);
+}
+
+.menu{
+  list-style-type: none;
+  margin: 0;
+  padding: 20px 0 20px 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .menu li:last-child {
+    margin-right: 0;
+  }
+  
+  .menu li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  
+  .menu li a:hover{
+    background-color: rgb(243, 234, 234);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.5s;
+  }
+
+  .contenedor__imagen{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .contenedor__imagen .banner{
+    width: 100%;
+    height: 51.55rem;
+  }
+
+  .contenedor__imagen figcaption{
+    position: absolute;
+    background-color: aliceblue;
+    bottom: 0px;
+    right: 1rem;
+    max-width: 50%;
+    padding: 10px;
+  }
+
+  .contenedor__imagen figcaption p{
+    color: black;
+    font-size: 14px;
+    line-height: 21px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .contenedor__descripcion{
+    display: flex;
+    flex-direction:column;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding: 10px 20px 10px 20px;
+    letter-spacing: 0.4px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px 0 20px 0;
+  }
+
+  footer{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #202020;
+    padding: 4rem;
+    justify-content: center;
+  }
+
+  footer ul {
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+    color: white; 
+    }
+  footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+  }
+
+ @media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        padding: 0;
+    }
+
+    .menu li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .menu li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+  /* GALERIA DE FOTOS */
+
+  .contenedor__galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 62px 5px;
+}
+
+.galeria_fotos_columna {
+    flex: 0 0 calc(33.33% - 40px); 
+    box-sizing: border-box;
+}
+
+.contenedor__galeria img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 768px) {
+    .galeria_fotos_columna {
+        flex: 0 0 calc(50% - 20px);
+    }
+}
+/* actores */
+.contenedor__cast{
+    margin: 20px 10px 20px 10px;
+}
+.contenedor__tabla{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.contenedor__tabla td,th{
+    border: 2px solid #000000;
+    text-align: center;
+    padding: 8px;
+    background: orange;
+    
+}
+
+tr:nth-child(){
+    background-color: #202020;
+}
